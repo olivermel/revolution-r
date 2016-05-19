@@ -71,6 +71,15 @@ popd
 mkdir -p %{buildroot}%{prefix}
 cp -r %{_builddir}%{prefix}/* %{buildroot}%{prefix}/ 
 
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/bin/R
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/bin/Rscript
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/cran_r_location
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/lib64/R/bin/R
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/lib64/R/revo_dir
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/lib64/R/etc/Makeconf
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/lib64/pkgconfig/libR.pc
+sed -i 's|/home/vagrant/rpmbuild/BUILD/|/|g' %{buildroot}%{prefix}/lib64/Revo-7.4/R-3.1.3/lib64/R/bin/Rscript
+
 ###########################################################
 # CLEAN
 # This directive is for cleaning up post packaging, simply
