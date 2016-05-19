@@ -17,5 +17,5 @@ echo '%_topdir '$HOME'/rpmbuild' > $HOME/.rpmmacros
 wget https://s3.amazonaws.com/new-rre-linux/compile_cran_r.sh -q
 tar -zcvf compile_cran_r.tar.gz compile_cran_r.sh
 cp compile_cran_r.tar.gz  $HOME/rpmbuild/SOURCES/
-wget https://s3.amazonaws.com/new-rre-linux/revolution-r-connector-7.4.0-rhel6.tar.gz -P $HOME/rpmbuild/SOURCES/ -q
-wget https://s3.amazonaws.com/new-rre-linux/revolution-r-enterprise-7.4.0-rhel6.tar.gz -P $HOME/rpmbuild/SOURCES/ -q 
+wget https://s3.amazonaws.com/new-rre-linux/Revolution-R-Connector-7.4.0-RHEL6.tar.gz -P $HOME/rpmbuild/SOURCES/ -q
+wget https://s3.amazonaws.com/new-rre-linux/Revolution-R-Enterprise-7.4.0-RHEL6.tar.gz -P $HOME/rpmbuild/SOURCES/ -q 
